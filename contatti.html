@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatti — Glevantis</title>
+<meta name="description" content="Raccontateci il vostro processo. Un assessment di una o due settimane per capire se ha senso costruire uno strumento su misura.">
+<link rel="canonical" href="https://[INSERIRE-DOMINIO]/contatti.html">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contatti — Glevantis">
+<meta property="og:description" content="Raccontateci il vostro processo. Un assessment di una o due settimane per capire se ha senso costruire uno strumento su misura.">
+<meta property="og:url" content="https://[INSERIRE-DOMINIO]/contatti.html">
+<meta property="og:image" content="[INSERIRE — immagine 1200x630px da esportare da brand/logo/]">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Vai al contenuto</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo-link" aria-label="Glevantis — home">
+      <img src="assets/images/logo-orizzontale.svg" alt="Glevantis" width="160" height="51">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="suite.html">Suite</a></li>
+        <li><a href="casi.html">Use Case</a></li>
+        <li><a href="come-lavoriamo.html">Come lavoriamo</a></li>
+        <li><a href="contatti.html" aria-current="page">Contatti</a></li>
+      </ul>
+      <a href="mailto:[INSERIRE]" class="btn btn-primary">Scrivi una email</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <svg class="hero-mark" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+      <line x1="20" y1="27" x2="110" y2="100" stroke="#4F46E5" stroke-width="4" stroke-linecap="round"/>
+      <line x1="20" y1="100" x2="110" y2="100" stroke="#4A4E58" stroke-width="4" stroke-linecap="round"/>
+      <line x1="20" y1="173" x2="110" y2="100" stroke="#9296A1" stroke-width="4" stroke-linecap="round"/>
+      <line class="draw-bar pulse" x1="110" y1="100" x2="180" y2="100" stroke="#4F46E5" stroke-width="4" stroke-linecap="round"/>
+      <circle class="draw-bar pulse" cx="110" cy="100" r="9" fill="#4F46E5"/>
+      <circle class="packet" r="3.5" fill="#4F46E5" style="animation-delay:0s;"><animateMotion dur="3.6s" begin="0.4s" repeatCount="indefinite" path="M20,27 L110,100"/></circle>
+      <circle class="packet" r="3.5" fill="#4A4E58" style="animation-delay:0.3s;"><animateMotion dur="3.6s" begin="0.7s" repeatCount="indefinite" path="M20,100 L110,100"/></circle>
+      <circle class="packet" r="3.5" fill="#9296A1" style="animation-delay:0.6s;"><animateMotion dur="3.6s" begin="1.0s" repeatCount="indefinite" path="M20,173 L110,100"/></circle>
+    </svg>
+    <div class="container">
+      <span class="eyebrow">Contatti</span>
+      <h1>Raccontateci il vostro processo</h1>
+      <p class="lede">Non serve arrivare con le idee chiare sulla soluzione: basta descrivere dove oggi si perde tempo o si copiano dati a mano.</p>
+    </div>
+  </section>
+
+  <section aria-label="Modulo di contatto e informazioni">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <!--
+            Modulo di contatto statico: collegare un servizio di invio
+            (es. Formspree, Netlify Forms, o un endpoint proprio) impostando
+            l'attributo action qui sotto. Nessun dato viene salvato in
+            localStorage o sessionStorage.
+          -->
+          <form class="contact-form" action="#" method="POST">
+            <div class="field">
+              <label for="nome">Nome e cognome</label>
+              <input type="text" id="nome" name="nome" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="azienda">Azienda</label>
+              <input type="text" id="azienda" name="azienda" required autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="telefono">Telefono <span class="field-hint">(facoltativo)</span></label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="messaggio">Descrivete il processo</label>
+              <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia la richiesta</button>
+          </form>
+        </div>
+
+        <div>
+          <dl class="contact-info">
+            <dt>Email</dt>
+            <dd><a href="mailto:[INSERIRE]">[INSERIRE]</a></dd>
+            <dt>Sede</dt>
+            <dd>Milano, [INSERIRE indirizzo]</dd>
+            <dt>Primo passo</dt>
+            <dd>Un assessment di una o due settimane per validare il progetto prima di costruire. Il costo si definisce insieme, dopo la prima chiamata.</dd>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-nav">
+        <h3>Naviga</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="suite.html">Suite</a></li>
+          <li><a href="casi.html">Use Case</a></li>
+          <li><a href="come-lavoriamo.html">Come lavoriamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <h3>Legale</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="cookie-policy.html">Cookie policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contatti</h3>
+        <p class="footer-legal-required">
+          Email: <a href="mailto:[INSERIRE]">[INSERIRE]</a><br>
+          Milano, [INSERIRE indirizzo]
+        </p>
+      </div>
+      <div>
+        <h3>Dati societari</h3>
+        <p class="footer-legal-required">
+          Glevantis [INSERIRE forma societaria]<br>
+          Sede legale: [INSERIRE indirizzo completo], Milano<br>
+          P.IVA / C.F.: [INSERIRE]<br>
+          REA: [INSERIRE]
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Glevantis</span>
+      <span>Milano</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

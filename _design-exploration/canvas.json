@@ -1,0 +1,30 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 820, "h": 560 },
+    { "file": "DirectionEditorial.dc.html", "x": 960, "y": 0, "w": 1160, "h": 1150 },
+    { "file": "DirectionBento.dc.html", "x": 2220, "y": 0, "w": 1160, "h": 950 },
+    { "file": "DirectionKinetic.dc.html", "x": 3480, "y": 0, "w": 1160, "h": 900 },
+    { "file": "OffBrandMain.dc.html", "x": 0, "y": 1210, "w": 820, "h": 520 },
+    { "file": "OffBrandMidnight.dc.html", "x": 960, "y": 1210, "w": 1160, "h": 760 },
+    { "file": "OffBrandCitrus.dc.html", "x": 2220, "y": 1210, "w": 1160, "h": 760 },
+    { "file": "OffBrandRaw.dc.html", "x": 3480, "y": 1210, "w": 1160, "h": 620 },
+    { "file": "OffBrand2Main.dc.html", "x": 0, "y": 2100, "w": 820, "h": 520 },
+    { "file": "OffBrandSoft.dc.html", "x": 960, "y": 2100, "w": 1160, "h": 760 },
+    { "file": "OffBrandBlueprint.dc.html", "x": 2220, "y": 2100, "w": 1160, "h": 700 },
+    { "file": "OffBrandDeco.dc.html", "x": 3480, "y": 2100, "w": 1160, "h": 900 },
+    { "file": "SynthesisIndustrial.dc.html", "x": 0, "y": 3060, "w": 1160, "h": 780 }
+  ],
+  "annotations": [
+    { "id": "note-editorial", "x": 960, "y": -140, "w": 460, "text": "Editoriale monumentale — tipografia enorme che rompe la griglia, molto spazio negativo, una citazione a tutta larghezza come pausa.\nTrade-off: è la più \"quieta\" delle tre — poco movimento, l'impatto è tutto nella scala tipografica." },
+    { "id": "note-bento", "x": 2220, "y": -140, "w": 460, "text": "Bento sistemico — griglia modulare stile prodotto (Linear/Vercel), tempistiche reali messe in evidenza come elemento visivo.\nTrade-off: più \"da prodotto SaaS\" — va dosato per non perdere il registro editoriale/lusso." },
+    { "id": "note-kinetic", "x": 3480, "y": -140, "w": 460, "text": "Cinetico — testo che appare in sequenza, ticker dei settori, card interattive al passaggio del mouse. Le animazioni sono reali: prova a interagire con l'artboard.\nTrade-off: richiede più disciplina in fase di sviluppo per restare sobrio e non \"vistoso\"." },
+    { "id": "note-midnight", "x": 960, "y": 1070, "w": 460, "text": "Midnight Systems — dark mode, glassmorphism, gradiente viola→ciano, font Space Grotesk + Sora.\nÈ esattamente il cliché \"startup AI\" (tipo Martes AI) che avevamo escluso a inizio progetto." },
+    { "id": "note-citrus", "x": 2220, "y": 1070, "w": 460, "text": "Citrus Maximalist — arancio/rosa/blu a blocchi saturi, Instrument Serif corsivo + Schibsted Grotesk, ombre offset.\nRegistro consumer/lifestyle: rischia di far perdere la credibilità B2B con un direttore operations." },
+    { "id": "note-raw", "x": 3480, "y": 1070, "w": 460, "text": "Raw Terminal — bianco/nero, bordi spessi 3px, monospace, un solo accento shock (arancio sicurezza).\nHa carattere tecnico forte ma è il più freddo e meno accogliente delle sei direzioni viste finora." },
+    { "id": "note-soft", "x": 960, "y": 1960, "w": 460, "text": "Soft Bio — gradient mesh pastello, blob sfumati, tutto arrotondato, Bricolage Grotesque + Quicksand.\nCaldo e accogliente, ma il registro è più wellness/consumer che B2B tecnico — rischia di sembrare un'altra categoria di prodotto." },
+    { "id": "note-blueprint", "x": 2220, "y": 1960, "w": 460, "text": "Blueprint Industrial — blu notte, griglia tecnica, crosshair, monospace maiuscolo stile disegno CAD.\nMolto coerente col posizionamento \"tecnico\", ma è freddo e potrebbe intimidire un interlocutore non tecnico." },
+    { "id": "note-deco", "x": 3480, "y": 1960, "w": 460, "text": "Deco Luxury — bordeaux e oro, cornice ornamentale, Cormorant Garamond corsivo, numeri romani.\nElegantissimo ma comunica un posizionamento da brand di lusso/moda, non da software house — rischia di confondere il messaggio." },
+    { "id": "note-synthesis", "x": 0, "y": 2920, "w": 700, "text": "Sintesi — pensata per PMI, industria, manifattura, logistica, retail.\nRigore tecnico di Blueprint (griglia, angoli, moduli numerati) portato sulla nostra palette chiara, con le tempistiche reali come fascia dati e un solo modulo invertito per dare peso alla \"decisione\". Tecnica ma non fredda." }
+  ],
+  "launch": { "view": "canvas" }
+}

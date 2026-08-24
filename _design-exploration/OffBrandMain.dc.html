@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: #2E5943; } a:hover { color: #1F3D2E; }
+</style>
+</helmet>
+<div style="width:820px;min-height:520px;background:#FAF9F7;padding:64px;font-family:'IBM Plex Sans',sans-serif;display:flex;flex-direction:column;gap:32px;">
+
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#565B60;">Esperimento — fuori dai paletti di brand</div>
+    <div style="font-family:'Newsreader';font-weight:500;font-size:36px;color:#1A1D1F;line-height:1.15;">Cosa succede se ignoriamo le regole?</div>
+    <div style="font-size:16px;color:#565B60;max-width:600px;line-height:1.6;">Tre direzioni che rompono deliberatamente i vincoli fissati nelle brand guidelines — colori diversi, font diversi, dark mode, glassmorphism, gradienti. Utile per capire cosa stiamo scegliendo di NON fare, e perché.</div>
+  </div>
+
+  <div style="height:1px;background:#EDEBE7;"></div>
+
+  <div style="display:flex;flex-direction:column;gap:18px;">
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Midnight Systems</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Dark mode, glassmorphism, gradiente viola→ciano — l'estetica "startup AI" che avevamo escluso.</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Citrus Maximalist</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Colori saturi a blocchi, tipografia grande e giocosa, energia da brand consumer.</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Raw Terminal</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Bianco/nero puro, monospace, bordi spessi, un solo colore-shock — registro brutalista/tecnico.</div>
+    </div>
+  </div>
+
+  <div style="margin-top:auto;padding-top:24px;border-top:1px solid #EDEBE7;font-family:'IBM Plex Sans';font-size:13px;color:#A8A39A;">
+    Nessuna di queste tre è una proposta: servono a vedere il contrasto rispetto alla direzione già scelta.
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

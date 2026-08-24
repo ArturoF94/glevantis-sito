@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=EB+Garamond:wght@400;500&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: inherit; }
+</style>
+</helmet>
+<div style="width:1160px;background:#2B0E14;font-family:'EB Garamond',serif;color:#F1E4C9;position:relative;">
+
+  <!-- ornamental border -->
+  <div style="position:absolute;inset:18px;border:1px solid #C9A24B;pointer-events:none;"></div>
+  <div style="position:absolute;top:32px;left:32px;width:28px;height:28px;border-top:2px solid #C9A24B;border-left:2px solid #C9A24B;"></div>
+  <div style="position:absolute;top:32px;right:32px;width:28px;height:28px;border-top:2px solid #C9A24B;border-right:2px solid #C9A24B;"></div>
+
+  <!-- HERO -->
+  <div style="padding:88px 72px 56px;text-align:center;">
+    <svg width="80" height="20" viewBox="0 0 80 20" style="margin-bottom:28px;">
+      <line x1="0" y1="10" x2="30" y2="10" stroke="#C9A24B" stroke-width="1"/>
+      <path d="M40 3 L46 10 L40 17 L34 10 Z" fill="none" stroke="#C9A24B" stroke-width="1"/>
+      <line x1="50" y1="10" x2="80" y2="10" stroke="#C9A24B" stroke-width="1"/>
+    </svg>
+
+    <div style="font-family:'EB Garamond';font-size:13px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:#C9A24B;margin-bottom:26px;">Software su misura per aziende</div>
+
+    <h1 style="font-family:'Cormorant Garamond';font-weight:400;font-size:76px;line-height:1.15;color:#F1E4C9;margin:0 0 28px;">Dai dati grezzi<br>alla <span style="font-style:italic;color:#C9A24B;">decisione operativa</span>.</h1>
+
+    <p style="font-size:18px;color:#C9B49A;line-height:1.7;max-width:520px;margin:0 auto 36px;">Costruiamo lo strumento che serve — quello che nessun software in commercio fa — e lo consegniamo in settimane, non in mesi.</p>
+
+    <a href="#" style="display:inline-block;border:1px solid #C9A24B;color:#C9A24B;font-family:'EB Garamond';font-weight:500;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;padding:14px 34px;">Richiedi un assessment</a>
+  </div>
+
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;padding:0 72px;">
+    <div style="height:1px;flex:1;background:#C9A24B;opacity:0.5;"></div>
+    <div style="width:8px;height:8px;transform:rotate(45deg);background:#C9A24B;"></div>
+    <div style="height:1px;flex:1;background:#C9A24B;opacity:0.5;"></div>
+  </div>
+
+  <!-- COSA FACCIAMO -->
+  <div style="padding:56px 72px 88px;">
+    <div style="text-align:center;font-family:'EB Garamond';font-size:13px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:#C9A24B;margin-bottom:40px;">Cosa facciamo</div>
+
+    <div style="display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:32px;">
+
+      <div style="text-align:center;border:1px solid rgba(201,162,75,0.35);padding:32px 22px;">
+        <div style="font-family:'Cormorant Garamond';font-style:italic;font-size:36px;color:#C9A24B;margin-bottom:14px;">I</div>
+        <h3 style="font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:#F1E4C9;margin:0 0 12px;">Colleghiamo i sistemi</h3>
+        <p style="font-size:14px;color:#C9B49A;line-height:1.6;margin:0;">Integriamo gli strumenti che avete già, senza sostituirli.</p>
+      </div>
+
+      <div style="text-align:center;border:1px solid rgba(201,162,75,0.35);padding:32px 22px;">
+        <div style="font-family:'Cormorant Garamond';font-style:italic;font-size:36px;color:#C9A24B;margin-bottom:14px;">II</div>
+        <h3 style="font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:#F1E4C9;margin:0 0 12px;">Automatizziamo il lavoro manuale</h3>
+        <p style="font-size:14px;color:#C9B49A;line-height:1.6;margin:0;">Il lavoro ripetitivo diventa un processo che gira da solo.</p>
+      </div>
+
+      <div style="text-align:center;border:1px solid rgba(201,162,75,0.35);padding:32px 22px;">
+        <div style="font-family:'Cormorant Garamond';font-style:italic;font-size:36px;color:#C9A24B;margin-bottom:14px;">III</div>
+        <h3 style="font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:#F1E4C9;margin:0 0 12px;">Restituiamo una decisione</h3>
+        <p style="font-size:14px;color:#C9B49A;line-height:1.6;margin:0;">Il sistema indica chi contattare, quale giro fare, se un prezzo conviene.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

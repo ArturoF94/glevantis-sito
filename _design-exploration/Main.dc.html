@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: #2E5943; } a:hover { color: #1F3D2E; }
+</style>
+</helmet>
+<div style="width:820px;min-height:560px;background:#FAF9F7;padding:64px;font-family:'IBM Plex Sans',sans-serif;display:flex;flex-direction:column;gap:36px;">
+
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#565B60;">Sito — direzioni di modernizzazione</div>
+    <div style="font-family:'Newsreader';font-weight:500;font-size:40px;color:#1A1D1F;line-height:1.1;">Tre modi per rendere il sito più dinamico</div>
+    <div style="font-size:16px;color:#565B60;max-width:600px;line-height:1.6;">Stessa palette, stessi font, stesso simbolo — cambia come li mettiamo in scena. Ogni direzione mostra hero + "Cosa facciamo", a bassa/media fedeltà: è una decisione da prendere, non il sito finale.</div>
+  </div>
+
+  <div style="height:1px;background:#EDEBE7;"></div>
+
+  <div style="display:flex;flex-direction:column;gap:18px;">
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Editoriale monumentale</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Tipografia enorme, layout asimmetrico, un momento-citazione a tutta larghezza.</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Bento sistemico</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Griglia modulare stile prodotto, tempistiche in evidenza come elemento visivo.</div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:baseline;">
+      <div style="font-family:'IBM Plex Sans';font-size:15px;font-weight:600;color:#1A1D1F;width:200px;flex-shrink:0;">Cinetico</div>
+      <div style="font-family:'IBM Plex Sans';font-size:15px;color:#565B60;">Testo che appare in sequenza, ticker dei settori, card che reagiscono al passaggio del mouse — animazioni reali, prova a interagire.</div>
+    </div>
+  </div>
+
+  <div style="margin-top:auto;padding-top:24px;border-top:1px solid #EDEBE7;font-family:'IBM Plex Sans';font-size:13px;color:#A8A39A;">
+    Nessuna direzione usa dark mode, glassmorphism, gradienti o iconografia generica — restano fuori scope per scelta di brand.
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

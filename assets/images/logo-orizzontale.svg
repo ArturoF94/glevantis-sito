@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160">
+  <title>Glevantis — logo orizzontale</title>
+  <g transform="translate(0,10) scale(0.65)">
+    <line x1="20" y1="27" x2="110" y2="100" stroke="#0E0F13" stroke-width="9" stroke-linecap="round"></line>
+    <line x1="20" y1="100" x2="110" y2="100" stroke="#0E0F13" stroke-width="9" stroke-linecap="round"></line>
+    <line x1="20" y1="173" x2="110" y2="100" stroke="#0E0F13" stroke-width="9" stroke-linecap="round"></line>
+    <line x1="110" y1="100" x2="180" y2="100" stroke="#4F46E5" stroke-width="9" stroke-linecap="round"></line>
+    <circle cx="110" cy="100" r="26" fill="#4F46E5"></circle>
+  </g>
+  <text x="155" y="105" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="600" font-size="64" letter-spacing="-2" fill="#0E0F13">Glevantis</text>
+</svg>

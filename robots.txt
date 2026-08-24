@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Disallow: /cookie-policy.html
+
+Sitemap: https://[INSERIRE-DOMINIO]/sitemap.xml
