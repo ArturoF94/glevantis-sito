@@ -3,6 +3,6 @@
   <line x1="20" y1="27" x2="110" y2="100" stroke="#0E0F13" stroke-width="7" stroke-linecap="round"></line>
   <line x1="20" y1="100" x2="110" y2="100" stroke="#0E0F13" stroke-width="7" stroke-linecap="round"></line>
   <line x1="20" y1="173" x2="110" y2="100" stroke="#0E0F13" stroke-width="7" stroke-linecap="round"></line>
-  <line x1="110" y1="100" x2="180" y2="100" stroke="#4F46E5" stroke-width="7" stroke-linecap="round"></line>
-  <circle cx="110" cy="100" r="22" fill="#4F46E5"></circle>
+  <line x1="110" y1="100" x2="180" y2="100" stroke="#1A73E8" stroke-width="7" stroke-linecap="round"></line>
+  <circle cx="110" cy="100" r="22" fill="#1A73E8"></circle>
 </svg>

@@ -6,8 +6,8 @@
   --paper: #F6F7F9;
   --mist: #EAEBEF;
   --stone: #9296A1;
-  --accent: #4F46E5;
-  --accent-tint: #EEF0FF;
+  --accent: #1A73E8;
+  --accent-tint: #E8F0FE;
   --white: #FFFFFF;
 
   --radius: 8px;
@@ -64,7 +64,7 @@ p { margin: 0 0 var(--space-2); }
 p:last-child { margin-bottom: 0; }
 
 a { color: var(--accent); text-decoration: none; }
-a:hover { color: #3730A3; text-decoration: underline; }
+a:hover { color: #1967D2; text-decoration: underline; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -222,7 +222,7 @@ code {
   background: var(--accent);
   color: var(--white);
 }
-.btn-primary:hover { background: #3730A3; color: var(--white); }
+.btn-primary:hover { background: #1967D2; color: var(--white); }
 
 .btn-secondary {
   background: transparent;
@@ -701,7 +701,7 @@ section + section { border-top: 1px solid var(--mist); }
   background: var(--accent-tint);
   color: var(--ink);
   font-weight: 600;
-  border-left: 1px solid #D8DAFB;
+  border-left: 1px solid #AECBFA;
 }
 
 /* ---------- Carousel casi ---------- */
