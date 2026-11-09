@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /privacy.html
-Disallow: /cookie-policy.html
 
 Sitemap: https://glevantis.it/sitemap.xml
