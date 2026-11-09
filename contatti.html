@@ -74,13 +74,21 @@
 
         <div>
           <!--
-            Modulo di contatto statico: collegare un servizio di invio
-            (es. Formspree, Netlify Forms, o un endpoint proprio) impostando
-            l'attributo action qui sotto. Nessun dato viene salvato in
-            localStorage o sessionStorage.
+            Il modulo invia a una Edge Function Supabase (progetto "glevantis",
+            funzione "contatto") che salva la richiesta e manda una mail a
+            info@glevantis.it. Nessun dato viene salvato in localStorage o sessionStorage.
           -->
-          <form class="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
-            <input type="hidden" name="_subject" value="Nuova richiesta dal sito glevantis.it">
+          <p id="esito-invio" class="field-hint" role="status" hidden style="padding:12px 16px;background:var(--accent-tint);border-radius:6px;color:var(--text,#111)"></p>
+          <script>
+            (function () {
+              var p = new URLSearchParams(location.search), el = document.getElementById('esito-invio');
+              var msg = p.get('inviato') === '1' ? 'Grazie, la richiesta è stata inviata. Vi risponderemo a breve.'
+                : p.get('errore') === 'limite' ? 'Troppe richieste ravvicinate: riprovate più tardi o scrivete a info@glevantis.it.'
+                : p.get('errore') ? 'Non è stato possibile inviare la richiesta: controllate i campi o scrivete a info@glevantis.it.' : '';
+              if (msg) { el.textContent = msg; el.hidden = false; }
+            })();
+          </script>
+          <form class="contact-form" action="https://pefkckuxmxzbyxqclose.supabase.co/functions/v1/contatto" method="POST">
             <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="field">
               <label for="nome">Nome e cognome</label>
