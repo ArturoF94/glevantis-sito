@@ -3,4 +3,4 @@ Allow: /
 Disallow: /privacy.html
 Disallow: /cookie-policy.html
 
-Sitemap: https://[INSERIRE-DOMINIO]/sitemap.xml
+Sitemap: https://glevantis.it/sitemap.xml
