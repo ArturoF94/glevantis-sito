@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contatti — Glevantis</title>
 <meta name="description" content="Raccontateci il vostro processo. Un assessment di una o due settimane per capire se ha senso costruire uno strumento su misura.">
-<link rel="canonical" href="https://[INSERIRE-DOMINIO]/contatti.html">
+<link rel="canonical" href="https://glevantis.it/contatti.html">
 <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contatti — Glevantis">
 <meta property="og:description" content="Raccontateci il vostro processo. Un assessment di una o due settimane per capire se ha senso costruire uno strumento su misura.">
-<meta property="og:url" content="https://[INSERIRE-DOMINIO]/contatti.html">
+<meta property="og:url" content="https://glevantis.it/contatti.html">
 <meta property="og:image" content="[INSERIRE — immagine 1200x630px da esportare da brand/logo/]">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
@@ -40,7 +40,7 @@
         <li><a href="come-lavoriamo.html">Come lavoriamo</a></li>
         <li><a href="contatti.html" aria-current="page">Contatti</a></li>
       </ul>
-      <a href="mailto:[INSERIRE]" class="btn btn-primary">Scrivi una email</a>
+      <a href="mailto:info@glevantis.it" class="btn btn-primary">Scrivi una email</a>
     </nav>
     <button class="nav-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="main-nav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -74,12 +74,22 @@
 
         <div>
           <!--
-            Modulo di contatto statico: collegare un servizio di invio
-            (es. Formspree, Netlify Forms, o un endpoint proprio) impostando
-            l'attributo action qui sotto. Nessun dato viene salvato in
-            localStorage o sessionStorage.
+            Il modulo invia a una Edge Function Supabase (progetto "glevantis",
+            funzione "contatto") che salva la richiesta e manda una mail a
+            info@glevantis.it. Nessun dato viene salvato in localStorage o sessionStorage.
           -->
-          <form class="contact-form" action="#" method="POST">
+          <p id="esito-invio" class="field-hint" role="status" hidden style="padding:12px 16px;background:var(--accent-tint);border-radius:6px;color:var(--text,#111)"></p>
+          <script>
+            (function () {
+              var p = new URLSearchParams(location.search), el = document.getElementById('esito-invio');
+              var msg = p.get('inviato') === '1' ? 'Grazie, la richiesta è stata inviata. Vi risponderemo a breve.'
+                : p.get('errore') === 'limite' ? 'Troppe richieste ravvicinate: riprovate più tardi o scrivete a info@glevantis.it.'
+                : p.get('errore') ? 'Non è stato possibile inviare la richiesta: controllate i campi o scrivete a info@glevantis.it.' : '';
+              if (msg) { el.textContent = msg; el.hidden = false; }
+            })();
+          </script>
+          <form class="contact-form" action="https://pefkckuxmxzbyxqclose.supabase.co/functions/v1/contatto" method="POST">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="field">
               <label for="nome">Nome e cognome</label>
               <input type="text" id="nome" name="nome" required autocomplete="name">
@@ -100,6 +110,7 @@
               <label for="messaggio">Descrivete il processo</label>
               <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
             </div>
+            <p class="field-hint">I dati inviati sono trattati come descritto nella <a href="privacy.html">privacy policy</a>.</p>
             <button type="submit" class="btn btn-primary">Invia la richiesta</button>
           </form>
         </div>
@@ -107,9 +118,9 @@
         <div>
           <dl class="contact-info">
             <dt>Email</dt>
-            <dd><a href="mailto:[INSERIRE]">[INSERIRE]</a></dd>
+            <dd><a href="mailto:info@glevantis.it">info@glevantis.it</a></dd>
             <dt>Sede</dt>
-            <dd>Milano, [INSERIRE indirizzo]</dd>
+            <dd>Milano</dd>
             <dt>Primo passo</dt>
             <dd>Un assessment di una o due settimane per validare il progetto prima di costruire. Il costo si definisce insieme, dopo la prima chiamata.</dd>
           </dl>
@@ -145,17 +156,8 @@
       <div>
         <h3>Contatti</h3>
         <p class="footer-legal-required">
-          Email: <a href="mailto:[INSERIRE]">[INSERIRE]</a><br>
-          Milano, [INSERIRE indirizzo]
-        </p>
-      </div>
-      <div>
-        <h3>Dati societari</h3>
-        <p class="footer-legal-required">
-          Glevantis [INSERIRE forma societaria]<br>
-          Sede legale: [INSERIRE indirizzo completo], Milano<br>
-          P.IVA / C.F.: [INSERIRE]<br>
-          REA: [INSERIRE]
+          Email: <a href="mailto:info@glevantis.it">info@glevantis.it</a><br>
+          Milano
         </p>
       </div>
     </div>
